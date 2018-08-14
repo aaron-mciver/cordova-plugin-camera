@@ -292,6 +292,8 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
 
     public void takePicture(int returnType, int encodingType)
     {
+        Toast.makeText(this, "HEY HEY HEY!!!", Toast.LENGTH_LONG).show();   
+           
         // Save the number of images currently on disk for later
         this.numPics = queryImgDB(whichContentStore()).getCount();
 
